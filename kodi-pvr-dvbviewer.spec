@@ -1,6 +1,6 @@
-%global commit 52929fe9c01b117caa8fcf3a8fcdff874f0fab95
+%global commit 2a8c91e08223cab2f4b277270921756d5fa3c8af
 %global short_commit %(c=%{commit}; echo ${c:0:7})
-%global commit_date 20170704
+%global commit_date 20171022
 
 %global kodi_addon pvr.dvbviewer
 %global kodi_version 17.0
@@ -9,7 +9,7 @@ Name:           kodi-%(tr "." "-" <<<%{kodi_addon})
 # Use Epoch to manage upgrades from older upstream
 # (https://github.com/opdenkamp/xbmc-pvr-addons/)
 Epoch:          1
-Version:        2.4.13
+Version:        2.4.14
 Release:        1%{?dist}
 Summary:        Kodi's DVBViewer client addon
 
@@ -57,6 +57,9 @@ cp -p %{SOURCE1} .
 
 
 %changelog
+* Tue Feb 20 2018 Mohamed El Morabity <melmorabity@fedoraproject.org> - 1:2.4.14-1
+- Update to 2.4.14
+
 * Tue Oct 03 2017 Mohamed El Morabity <melmorabity@fedoraproject.org> - 1:2.4.13-1
 - Update to 2.4.13
 
