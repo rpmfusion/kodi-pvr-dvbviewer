@@ -1,6 +1,6 @@
-%global commit 05cff5b69e357d31ca123fc939673695f2865958
+%global commit b63e867740a61cf5a9c530a636069fa8ec1e20c7
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
-%global commitdate 20180312
+%global commitdate 20180825
 
 %global kodi_addon pvr.dvbviewer
 %global kodi_version 18.0
@@ -9,8 +9,8 @@ Name:           kodi-%(tr "." "-" <<<%{kodi_addon})
 # Use Epoch to manage upgrades from older upstream
 # (https://github.com/opdenkamp/xbmc-pvr-addons/)
 Epoch:          1
-Version:        3.3.8
-Release:        2%{?dist}
+Version:        3.6.6
+Release:        1%{?dist}
 Summary:        DVBViewer PVR for Kodi
 
 License:        GPLv2+
@@ -24,7 +24,7 @@ BuildRequires:  kodi-platform-devel >= %{kodi_version}
 BuildRequires:  pkgconfig(tinyxml)
 BuildRequires:  platform-devel
 Requires:       kodi >= %{kodi_version}
-ExclusiveArch:  i686 x86_64
+ExclusiveArch:  i686 x86_64 aarch64
 
 %description
 %{summary}.
@@ -50,6 +50,10 @@ ExclusiveArch:  i686 x86_64
 
 
 %changelog
+* Thu Aug 30 2018 Mohamed El Morabity <melmorabity@fedoraproject.org> - 1:3.6.6-1
+- Update to 3.6.6
+- Enable aarch64 build
+
 * Thu Jul 26 2018 RPM Fusion Release Engineering <leigh123linux@gmail.com> - 1:3.3.8-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild
 
