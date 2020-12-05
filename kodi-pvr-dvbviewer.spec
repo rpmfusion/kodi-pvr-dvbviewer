@@ -7,7 +7,7 @@ Name:           kodi-%(tr "." "-" <<<%{kodi_addon})
 # (https://github.com/opdenkamp/xbmc-pvr-addons/)
 Epoch:          1
 Version:        7.1.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        DVBViewer PVR for Kodi
 
 License:        GPLv2+
@@ -46,6 +46,9 @@ ExcludeArch:    %{power64} ppc64le
 
 
 %changelog
+* Sat Dec  5 12:56:51 CET 2020 Mohamed El Morabity <melmorabity@fedoraproject.org> - 1:7.1.0-2
+- Rebuild for Kodi 19.0 beta 1
+
 * Mon Nov 16 2020 Mohamed El Morabity <melmorabity@fedoraproject.org> - 1:7.1.0-1
 - Update to 7.1.0
 
