@@ -6,7 +6,7 @@ Name:           kodi-%(tr "." "-" <<<%{kodi_addon})
 # Use Epoch to manage upgrades from older upstream
 # (https://github.com/opdenkamp/xbmc-pvr-addons/)
 Epoch:          1
-Version:        7.2.0
+Version:        7.3.1
 Release:        1%{?dist}
 Summary:        DVBViewer PVR for Kodi
 
@@ -46,6 +46,9 @@ ExcludeArch:    %{power64} ppc64le
 
 
 %changelog
+* Sun Jul 11 2021 Mohamed El Morabity <melmorabity@fedoraproject.org> - 1:7.3.1-1
+- Update to 7.3.1
+
 * Fri Jan 29 2021 Mohamed El Morabity <melmorabity@fedoraproject.org> - 1:7.2.0-1
 - Update to 7.2.0
 
